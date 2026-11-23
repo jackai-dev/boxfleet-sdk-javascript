@@ -1,0 +1,412 @@
+{
+  "contract_fingerprint": "e3fd4c744ae8933c0e0bd0c21a692897795a14657e577fb82108500d39f2ac8d",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "boxfleet_hosted_control_plane_boxfleet_io-sdk@0.3.0",
+        "ecosystem": "npm",
+        "entry": "",
+        "import": "const sdk = require(\"boxfleet_hosted_control_plane_boxfleet_io-sdk\");"
+      },
+      "operations": {
+        "cancelJob": {
+          "member": "jobs.cancel",
+          "method": "POST",
+          "path": "/v1/jobs/{jobId}/cancel",
+          "resource": "jobs",
+          "signature": "client.jobs.cancel(jobId, requestOptions?)"
+        },
+        "closeHostedWorkspace": {
+          "member": "workspaces.closeHosted",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/close",
+          "resource": "workspaces",
+          "signature": "client.workspaces.closeHosted(workspaceId, requestOptions?)"
+        },
+        "closePersistentBox": {
+          "member": "organizations.closePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/close",
+          "resource": "organizations",
+          "signature": "client.organizations.closePersistentBox(organizationId, boxId, requestOptions?)"
+        },
+        "controlUser": {
+          "member": "admin.controlUser",
+          "method": "POST",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "client.admin.controlUser(body, requestOptions?)"
+        },
+        "createBillingPortal": {
+          "member": "organizations.createBillingPortal",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/portal",
+          "resource": "organizations",
+          "signature": "client.organizations.createBillingPortal(organizationId, requestOptions?)"
+        },
+        "createBox": {
+          "member": "organizations.createBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "client.organizations.createBox(organizationId, body, requestOptions?)"
+        },
+        "createCheckout": {
+          "member": "organizations.createCheckout",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/checkout",
+          "resource": "organizations",
+          "signature": "client.organizations.createCheckout(organizationId, body, requestOptions?)"
+        },
+        "getAccountsConfig": {
+          "member": "accounts.getConfig",
+          "method": "GET",
+          "path": "/v1/accounts/config",
+          "resource": "accounts",
+          "signature": "client.accounts.getConfig(requestOptions?)"
+        },
+        "getAdminConsole": {
+          "member": "admin.getConsole",
+          "method": "GET",
+          "path": "/v1/admin/console",
+          "resource": "admin",
+          "signature": "client.admin.getConsole(requestOptions?)"
+        },
+        "getAdminPlans": {
+          "member": "admin.getPlans",
+          "method": "GET",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "client.admin.getPlans(requestOptions?)"
+        },
+        "getAuthGate": {
+          "member": "auth_.getGate",
+          "method": "GET",
+          "path": "/v1/auth/gate",
+          "resource": "auth_",
+          "signature": "client.auth_.getGate(requestOptions?)"
+        },
+        "getBilling": {
+          "member": "organizations.getBilling",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing",
+          "resource": "organizations",
+          "signature": "client.organizations.getBilling(organizationId, requestOptions?)"
+        },
+        "getBox": {
+          "member": "organizations.getBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "client.organizations.getBox(organizationId, boxId, requestOptions?)"
+        },
+        "getEntitlements": {
+          "member": "organizations.getEntitlements",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/entitlements",
+          "resource": "organizations",
+          "signature": "client.organizations.getEntitlements(organizationId, requestOptions?)"
+        },
+        "getFleet": {
+          "member": "organizations.getFleet",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet",
+          "resource": "organizations",
+          "signature": "client.organizations.getFleet(organizationId, requestOptions?)"
+        },
+        "getFleetPolicy": {
+          "member": "organizations.getFleetPolicy",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "client.organizations.getFleetPolicy(organizationId, requestOptions?)"
+        },
+        "getHealth": {
+          "member": "health.get",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "client.health.get(requestOptions?)"
+        },
+        "getHostedWorkspace": {
+          "member": "workspaces.getHosted",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}",
+          "resource": "workspaces",
+          "signature": "client.workspaces.getHosted(workspaceId, requestOptions?)"
+        },
+        "getHostedWorkspaceOperation": {
+          "member": "workspaces.getHostedOperation",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/operations/{operationId}",
+          "resource": "workspaces",
+          "signature": "client.workspaces.getHostedOperation(workspaceId, operationId, requestOptions?)"
+        },
+        "getHostedWorkspaceSource": {
+          "member": "workspaces.getHostedSource",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/source",
+          "resource": "workspaces",
+          "signature": "client.workspaces.getHostedSource(workspaceId, requestOptions?)"
+        },
+        "getJob": {
+          "member": "jobs.get",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}",
+          "resource": "jobs",
+          "signature": "client.jobs.get(jobId, requestOptions?)"
+        },
+        "getPersistentBox": {
+          "member": "organizations.getPersistentBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "client.organizations.getPersistentBox(organizationId, boxId, requestOptions?)"
+        },
+        "getPersistentBoxProviderUsage": {
+          "member": "organizations.getPersistentBoxProviderUsage",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/usage",
+          "resource": "organizations",
+          "signature": "client.organizations.getPersistentBoxProviderUsage(organizationId, boxId, from, to, requestOptions?)"
+        },
+        "getPlans": {
+          "member": "plans.get",
+          "method": "GET",
+          "path": "/v1/plans",
+          "resource": "plans",
+          "signature": "client.plans.get(requestOptions?)"
+        },
+        "ingestTelemetry": {
+          "member": "telemetry.ingest",
+          "method": "POST",
+          "path": "/v1/telemetry/ingest",
+          "resource": "telemetry",
+          "signature": "client.telemetry.ingest(body, requestOptions?)"
+        },
+        "listBoxes": {
+          "member": "organizations.listBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "client.organizations.listBoxes(organizationId, requestOptions?)"
+        },
+        "listHostedWorkspaces": {
+          "member": "workspaces.listHosted",
+          "method": "GET",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "client.workspaces.listHosted(requestOptions?)"
+        },
+        "listInvoices": {
+          "member": "organizations.listInvoices",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing/invoices",
+          "resource": "organizations",
+          "signature": "client.organizations.listInvoices(organizationId, requestOptions?)"
+        },
+        "listJobEvents": {
+          "member": "jobs.listEvents",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}/events",
+          "resource": "jobs",
+          "signature": "client.jobs.listEvents(jobId, requestOptions?)"
+        },
+        "listJobs": {
+          "member": "jobs.list",
+          "method": "GET",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "client.jobs.list(requestOptions?)"
+        },
+        "listMembers": {
+          "member": "organizations.listMembers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "client.organizations.listMembers(organizationId, requestOptions?)"
+        },
+        "listObservedBoxes": {
+          "member": "organizations.listObservedBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/observed-boxes",
+          "resource": "organizations",
+          "signature": "client.organizations.listObservedBoxes(organizationId, requestOptions?)"
+        },
+        "listPersistentBoxOffers": {
+          "member": "organizations.listPersistentBoxOffers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/offers",
+          "resource": "organizations",
+          "signature": "client.organizations.listPersistentBoxOffers(organizationId, requestOptions?)"
+        },
+        "listPersistentBoxes": {
+          "member": "organizations.listPersistentBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "client.organizations.listPersistentBoxes(organizationId, limit?, requestOptions?)"
+        },
+        "listUsers": {
+          "member": "admin.listUsers",
+          "method": "GET",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "client.admin.listUsers(requestOptions?)"
+        },
+        "listWaitlist": {
+          "member": "waitlist.list",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "client.waitlist.list(requestOptions?)"
+        },
+        "openHostedWorkspace": {
+          "member": "workspaces.openHosted",
+          "method": "POST",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "client.workspaces.openHosted(body, Idempotency_Key?, requestOptions?)"
+        },
+        "provisionPersistentBox": {
+          "member": "organizations.provisionPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "client.organizations.provisionPersistentBox(organizationId, body, Idempotency_Key?, requestOptions?)"
+        },
+        "putFleetPolicy": {
+          "member": "organizations.putFleetPolicy",
+          "method": "PUT",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "client.organizations.putFleetPolicy(organizationId, body, requestOptions?)"
+        },
+        "readTelemetry": {
+          "member": "admin.readTelemetry",
+          "method": "GET",
+          "path": "/v1/admin/telemetry",
+          "resource": "admin",
+          "signature": "client.admin.readTelemetry(requestOptions?)"
+        },
+        "reconcilePersistentBox": {
+          "member": "organizations.reconcilePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/reconcile",
+          "resource": "organizations",
+          "signature": "client.organizations.reconcilePersistentBox(organizationId, boxId, body, requestOptions?)"
+        },
+        "recoverHostedWorkspace": {
+          "member": "workspaces.recoverHosted",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/recover",
+          "resource": "workspaces",
+          "signature": "client.workspaces.recoverHosted(workspaceId, body, requestOptions?)"
+        },
+        "register": {
+          "member": "auth_.register",
+          "method": "POST",
+          "path": "/v1/auth/register",
+          "resource": "auth_",
+          "signature": "client.auth_.register(body, requestOptions?)"
+        },
+        "removeMember": {
+          "member": "organizations.removeMember",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/members/{userId}",
+          "resource": "organizations",
+          "signature": "client.organizations.removeMember(organizationId, userId, requestOptions?)"
+        },
+        "requestAccess": {
+          "member": "waitlist.requestAccess",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "client.waitlist.requestAccess(body, requestOptions?)"
+        },
+        "runHostedWorkspace": {
+          "member": "workspaces.runHosted",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/run",
+          "resource": "workspaces",
+          "signature": "client.workspaces.runHosted(workspaceId, body, Idempotency_Key?, requestOptions?)"
+        },
+        "startPersistentBox": {
+          "member": "organizations.startPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/start",
+          "resource": "organizations",
+          "signature": "client.organizations.startPersistentBox(organizationId, boxId, body, Idempotency_Key?, requestOptions?)"
+        },
+        "stopBox": {
+          "member": "organizations.stopBox",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "client.organizations.stopBox(organizationId, boxId, requestOptions?)"
+        },
+        "stopPersistentBox": {
+          "member": "organizations.stopPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/stop",
+          "resource": "organizations",
+          "signature": "client.organizations.stopPersistentBox(organizationId, boxId, body, Idempotency_Key?, requestOptions?)"
+        },
+        "stripeWebhook": {
+          "member": "billing.stripeWebhook",
+          "method": "POST",
+          "path": "/v1/billing/stripe/webhook",
+          "resource": "billing",
+          "signature": "client.billing.stripeWebhook(requestOptions?)"
+        },
+        "submitJob": {
+          "member": "jobs.submit",
+          "method": "POST",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "client.jobs.submit(body, requestOptions?)"
+        },
+        "syncObservedBoxes": {
+          "member": "organizations.syncObservedBoxes",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/observed-boxes/sync",
+          "resource": "organizations",
+          "signature": "client.organizations.syncObservedBoxes(organizationId, body, requestOptions?)"
+        },
+        "updateAuthGate": {
+          "member": "auth_.updateGate",
+          "method": "PUT",
+          "path": "/v1/auth/gate",
+          "resource": "auth_",
+          "signature": "client.auth_.updateGate(body, requestOptions?)"
+        },
+        "updatePlan": {
+          "member": "admin.updatePlan",
+          "method": "POST",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "client.admin.updatePlan(body, requestOptions?)"
+        },
+        "upsertMember": {
+          "member": "organizations.upsertMember",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "client.organizations.upsertMember(organizationId, body, requestOptions?)"
+        },
+        "verifyLicense": {
+          "member": "auth_.verifyLicense",
+          "method": "POST",
+          "path": "/v1/auth/verify",
+          "resource": "auth_",
+          "signature": "client.auth_.verifyLicense(body, requestOptions?)"
+        }
+      },
+      "package_directory": "../boxfleet_hosted_control_plane_boxfleet_io-sdk",
+      "package_manifest": "package.json",
+      "reference": "api.md",
+      "renderer": "javascript"
+    }
+  ]
+}
